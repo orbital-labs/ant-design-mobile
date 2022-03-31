@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const less = require('gulp-less')
+const rename = require('gulp-rename')
 const path = require('path')
 const postcss = require('gulp-postcss')
 const babel = require('gulp-babel')
@@ -219,7 +220,7 @@ function copyMetaFiles() {
 
 function generatePackageJSON() {
   return gulp
-    .src('./package.json')
+    .src('./package-orbital.json')
     .pipe(
       through.obj((file, enc, cb) => {
         const rawJSON = file.contents.toString()
@@ -233,6 +234,7 @@ function generatePackageJSON() {
         cb(null, file)
       })
     )
+    .pipe(rename('package.json'))
     .pipe(gulp.dest('./lib/'))
 }
 
