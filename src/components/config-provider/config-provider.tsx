@@ -1,6 +1,6 @@
 import React, { FC, useContext } from 'react'
 import { Locale } from '../../locales/base'
-import zhCN from '../../locales/zh-CN'
+import enUS from '../../locales/en-US'
 
 type Config = {
   locale: Locale
@@ -10,7 +10,7 @@ export const defaultConfigRef: {
   current: Config
 } = {
   current: {
-    locale: zhCN,
+    locale: enUS,
   },
 }
 

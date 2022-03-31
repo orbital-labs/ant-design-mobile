@@ -1,6 +1,6 @@
 {
   "name": "orbital-design-mobile",
-  "version": "5.9.2",
+  "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",
     "build": "gulp",
