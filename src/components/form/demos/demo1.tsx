@@ -25,6 +25,7 @@ export default () => {
   return (
     <>
       <Form
+        requiredMarkStyle='none'
         name='form'
         onFinish={onFinish}
         footer={

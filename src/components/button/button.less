@@ -19,8 +19,9 @@
   display: inline-block;
   box-sizing: border-box;
   height: auto;
-  padding: 7px 12px;
+  padding: 7px 24px;
   margin: 0;
+  font-family: var(--adm-font-family);
   font-size: 17px;
   line-height: 1.4;
   text-align: center;
@@ -125,6 +126,11 @@
   }
   &&-shape-rounded {
     --border-radius: 1000px;
+  }
+  &&-shape-circle {
+    --border-radius: 50%;
+    font-size: 17px;
+    padding: 7px 12px;
   }
   &&-shape-rectangular {
     --border-radius: 0;

@@ -16,7 +16,7 @@ export type ButtonProps = {
   disabled?: boolean
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 'submit' | 'reset' | 'button'
-  shape?: 'default' | 'rounded' | 'rectangular'
+  shape?: 'default' | 'rounded' | 'rectangular' | 'circle'
   children?: React.ReactNode
 } & NativeProps<
   | '--text-color'

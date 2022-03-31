@@ -41,6 +41,9 @@ export default () => {
           <Button block shape='rounded' color='primary'>
             Rounded Button
           </Button>
+          <Button block shape='circle' color='primary'>
+            <SearchOutline />
+          </Button>
           <Button block shape='rectangular' color='primary'>
             Rectangular Button
           </Button>
